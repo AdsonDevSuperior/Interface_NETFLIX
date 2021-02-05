@@ -43,8 +43,8 @@ header .logo{
     /*filme principal*/
     .filme-principal{
         font-size: 16px;
-        background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/surreal.jpg');
-        height: 500px;
+        background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/Interface_NETFLIX/img/surreal.jpg');
+        height: 700px;
         background-size: cover;
         display:flex;
         flex-direction: column;
@@ -94,25 +94,14 @@ header .logo{
     }
 
     .box-filme{
-        height: 100%/9;
-        width: 100%/9;
+        width: 100px;
+        height: 350px;
+        
         display: block;
     }
     
-    .carrosel-filmes{
+    .carrosel-filmess{
        margin: 5px;
-    }
+      
 
-    .carrosel-filmes:hover{
-        background-color: rgba(0,0,0,.50);
-   
-        color: white;
-
-        padding-top:10px;
-        padding-bottom:10px;
- 
-       
-
-
-        transition: .3s ease all;
     }
