@@ -43,7 +43,7 @@ header .logo{
     /*filme principal*/
     .filme-principal{
         font-size: 16px;
-        background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/Interface_NETFLIX/img/surreal.jpg');
+        background: url('/img/diva.jpg');
         height: 700px;
         background-size: cover;
         display:flex;
@@ -92,16 +92,53 @@ header .logo{
     .filme-principal .container{
         width: 70%;
     }
-
-    .box-filme{
-        width: 100px;
-        height: 350px;
-        
-        display: block;
-    }
     
-    .carrosel-filmess{
-       margin: 5px;
+    .carrosel-filmes{
+        margin: 10px ;      
       
+    }
 
+    .figure-box{ 
+       
+        width: 2000px;
+        position: relative;
+    }
+
+    .figure-box figure{
+        border-bottom: 20;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .figure-box figure img{
+        max-width: 100%;
+        position:relative;
+        transition: transform 0.6s;
+    }
+
+    .figure-box figure:hover img{
+        transform: translateY(-50px);
+    }
+    .figure-box figcaption{
+        position: absolute;
+        top:auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 185px;
+
+        padding: 20px;
+        background-color: #9e6c4c;
+        color:white;
+        text-align: justify;
+
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform 0.6s, opacity 0.1s 0.3s;
+    }
+
+    .figure-box figure:hover figcaption{
+        opacity: 1;
+        transform: translateY(0px);
+        transition: transform 0.6s, opacity 0.1s;
     }
